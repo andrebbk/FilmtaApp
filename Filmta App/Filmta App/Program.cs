@@ -16,7 +16,7 @@ namespace Filmta_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormInico());
+            Application.Run(new FormLogin());
         }
     }
 }
