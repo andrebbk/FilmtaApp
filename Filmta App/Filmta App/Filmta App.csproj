@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NetDimension.WinForm.ModernUI, Version=1.0.6639.22990, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetDimension.WinForm.ModernUI.1.0.1\lib\NetDimension.WinForm.ModernUI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +56,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,7 +67,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -74,6 +82,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_metal-grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metal-grid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corrugated-sheet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark-pattern.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray-fabric-texture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xpatheos-default-bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gray-Wallpaper-68half.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark-brushed-metal-texturehalf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-26.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
