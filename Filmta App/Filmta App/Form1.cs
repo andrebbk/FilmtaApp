@@ -16,6 +16,13 @@ namespace Filmta_App
 
         public Form1()
         {
+            //ICON
+            // Get an Hicon for myBitmap.
+            IntPtr Hicon = Properties.Resources.steampunk_victorian.GetHicon();
+            // Create a new icon from the handle. 
+            Icon _Icon = Icon.FromHandle(Hicon);
+            this.Icon = _Icon;            
+
             InitializeComponent();
 
             //Preencher o ecra todo (depende da resolução)
