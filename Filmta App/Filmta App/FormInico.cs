@@ -38,7 +38,11 @@ namespace Filmta_App
         //Botao para sair
         private void buttonSair_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //Popup
+            FormPopupWindow _popup = new FormPopupWindow();
+
+            if(_popup.ShowDialog() == DialogResult.OK)
+                this.Close();
         }
 
         //Botao para minimizar

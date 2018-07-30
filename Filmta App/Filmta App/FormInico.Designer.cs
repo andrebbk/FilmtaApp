@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panelTopBar = new System.Windows.Forms.Panel();
+            this.buttonMinimize = new System.Windows.Forms.Button();
             this.buttonSair = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelSideBar = new System.Windows.Forms.Panel();
-            this.buttonMinimize = new System.Windows.Forms.Button();
             this.panelTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +52,24 @@
             this.panelTopBar.Size = new System.Drawing.Size(1920, 74);
             this.panelTopBar.TabIndex = 0;
             // 
+            // buttonMinimize
+            // 
+            this.buttonMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonMinimize.FlatAppearance.BorderSize = 0;
+            this.buttonMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.buttonMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.buttonMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinimize.Font = new System.Drawing.Font("Myanmar Text", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMinimize.ForeColor = System.Drawing.Color.DarkGray;
+            this.buttonMinimize.Location = new System.Drawing.Point(1787, -1);
+            this.buttonMinimize.Name = "buttonMinimize";
+            this.buttonMinimize.Size = new System.Drawing.Size(51, 51);
+            this.buttonMinimize.TabIndex = 3;
+            this.buttonMinimize.Text = "_";
+            this.buttonMinimize.UseVisualStyleBackColor = false;
+            this.buttonMinimize.Click += new System.EventHandler(this.buttonMinimize_Click);
+            // 
             // buttonSair
             // 
             this.buttonSair.BackColor = System.Drawing.Color.Transparent;
@@ -60,11 +78,11 @@
             this.buttonSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.buttonSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSair.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSair.Font = new System.Drawing.Font("Myanmar Text", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSair.ForeColor = System.Drawing.Color.DarkGray;
-            this.buttonSair.Location = new System.Drawing.Point(1844, 12);
+            this.buttonSair.Location = new System.Drawing.Point(1844, 16);
             this.buttonSair.Name = "buttonSair";
-            this.buttonSair.Size = new System.Drawing.Size(51, 52);
+            this.buttonSair.Size = new System.Drawing.Size(51, 38);
             this.buttonSair.TabIndex = 2;
             this.buttonSair.Text = "X";
             this.buttonSair.UseVisualStyleBackColor = false;
@@ -103,24 +121,6 @@
             this.panelSideBar.Size = new System.Drawing.Size(333, 1006);
             this.panelSideBar.TabIndex = 0;
             // 
-            // buttonMinimize
-            // 
-            this.buttonMinimize.BackColor = System.Drawing.Color.Transparent;
-            this.buttonMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonMinimize.FlatAppearance.BorderSize = 0;
-            this.buttonMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.buttonMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.buttonMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMinimize.Font = new System.Drawing.Font("Myanmar Text", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMinimize.ForeColor = System.Drawing.Color.DarkGray;
-            this.buttonMinimize.Location = new System.Drawing.Point(1796, -1);
-            this.buttonMinimize.Name = "buttonMinimize";
-            this.buttonMinimize.Size = new System.Drawing.Size(51, 55);
-            this.buttonMinimize.TabIndex = 3;
-            this.buttonMinimize.Text = "_";
-            this.buttonMinimize.UseVisualStyleBackColor = false;
-            this.buttonMinimize.Click += new System.EventHandler(this.buttonMinimize_Click);
-            // 
             // FormInico
             // 
             this.ActiveBorderColor = System.Drawing.Color.White;
@@ -140,7 +140,7 @@
             this.InactiveShadowColor = System.Drawing.Color.White;
             this.Name = "FormInico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FILMTA";
+            this.Text = "Filmta";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelTopBar.ResumeLayout(false);
             this.panelTopBar.PerformLayout();

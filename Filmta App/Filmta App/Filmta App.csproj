@@ -54,10 +54,19 @@
     <Compile Include="FormInico.Designer.cs">
       <DependentUpon>FormInico.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPopupWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPopupWindow.Designer.cs">
+      <DependentUpon>FormPopupWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormInico.resx">
       <DependentUpon>FormInico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPopupWindow.resx">
+      <DependentUpon>FormPopupWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
