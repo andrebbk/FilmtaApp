@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace Filmta_App
 {
-    public partial class Form1 : ModernUIForm
+    public partial class FormInico : ModernUIForm
     {
 
-        public Form1()
+        public FormInico()
         {
             //ICON
             // Get an Hicon for myBitmap.
@@ -29,10 +29,22 @@ namespace Filmta_App
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
         }
 
+        //Carregar Form
         private void Form1_Load(object sender, EventArgs e)
         {
             
-        }        
-                
+        }
+
+        //Botao para sair
+        private void buttonSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        //Botao para minimizar
+        private void buttonMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }    
 }

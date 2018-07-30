@@ -103,6 +103,26 @@ namespace Filmta_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap letter_x_icon_32 {
+            get {
+                object obj = ResourceManager.GetObject("letter_x_icon_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_window_icon_32 {
+            get {
+                object obj = ResourceManager.GetObject("minimize_window_icon_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap steampunk_victorian {
             get {
                 object obj = ResourceManager.GetObject("steampunk_victorian", resourceCulture);
