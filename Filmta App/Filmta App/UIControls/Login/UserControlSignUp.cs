@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Filmta_App.UIControls.Login
 {
-    public partial class UserControlLogin : UserControl
+    public partial class UserControlSignUp : UserControl
     {
         private FormLogin formL;
 
-        public UserControlLogin(FormLogin _formL)
+        public UserControlSignUp(FormLogin _formL)
         {
             InitializeComponent();
 
@@ -22,10 +22,15 @@ namespace Filmta_App.UIControls.Login
             formL = _formL;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonGoBack_Click(object sender, EventArgs e)
         {
             formL.BuscarContainer().Controls.Clear();
-            formL.BuscarContainer().Controls.Add(new UserControlSignUp(formL));
+            formL.BuscarContainer().Controls.Add(new UserControlLogin(formL));
+        }
+
+        private void buttonSignUp_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

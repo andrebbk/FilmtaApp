@@ -15,12 +15,17 @@ namespace Filmta_App
         {
             //Inicializar com controladores para o Login
             PanelContainer.Controls.Clear();
-            PanelContainer.Controls.Add(new UserControlLogin());
+            PanelContainer.Controls.Add(new UserControlLogin(this));           
         }
 
         private void buttonSair_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public Panel BuscarContainer()
+        {
+            return this.PanelContainer;
         }
     }
 }
